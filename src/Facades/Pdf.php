@@ -2,7 +2,7 @@
 
 namespace GatenbySanderson\LaravelPdfGenerator\Facades;
 
-use GatenbySanderson\PdfGeneratorSdk\PdfGenerator;
+use GatenbySanderson\LaravelPdfGenerator\PdfGenerator;
 use Illuminate\Support\Facades\Facade;
 
 class Pdf extends Facade

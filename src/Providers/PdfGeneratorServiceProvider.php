@@ -2,7 +2,8 @@
 
 namespace GatenbySanderson\LaravelPdfGenerator\Providers;
 
-use GatenbySanderson\PdfGeneratorSdk\PdfGenerator;
+use GatenbySanderson\LaravelPdfGenerator\PdfGenerator;
+use GatenbySanderson\PdfGeneratorSdk\PdfGenerator as PdfGeneratorSdk;
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
 
@@ -31,7 +32,8 @@ class PdfGeneratorServiceProvider extends ServiceProvider
         // Bind the PDF Generator to the container.
         $this->app->bind(PdfGenerator::class, function () {
             $guzzle = new Client(['base_uri' => config('pdf.url')]);
-            return new PdfGenerator($guzzle);
+            $pdfGeneratorSdk = new PdfGeneratorSdk($guzzle);
+            return new PdfGenerator($pdfGeneratorSdk);
         });
     }
 }
