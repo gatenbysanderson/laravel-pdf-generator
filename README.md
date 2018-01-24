@@ -36,7 +36,7 @@ Start by adding this repo to your projects composer.json file:
 You can then simply require the package as with any other:
 
 ```
-$ composer require gatenbysanderson/laravel-pdf-generator "~5.1"
+$ composer require gatenbysanderson/laravel-pdf-generator "~5.1.0"
 ```
 
 You must then register the service provider and optionally the facade:
