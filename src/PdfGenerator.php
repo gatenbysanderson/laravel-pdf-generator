@@ -28,7 +28,7 @@ class PdfGenerator
      * @return array
      * @throws \GuzzleHttp\Exception\ClientException
      */
-    public function generate(array $files, array $options = [])
+    public function generate(array $files, array $options = []): array
     {
         $files = array_map(function ($file) {
             return ($file instanceof View) ? $file->render() : $file;

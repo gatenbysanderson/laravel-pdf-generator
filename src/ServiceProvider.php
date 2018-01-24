@@ -13,7 +13,7 @@ class ServiceProvider extends BaseServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         // Publish the config file.
         $this->publishes([
@@ -26,7 +26,7 @@ class ServiceProvider extends BaseServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         // Bind the PDF Generator to the container.
         $this->app->bind(PdfGenerator::class, function () {
