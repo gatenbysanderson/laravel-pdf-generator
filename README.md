@@ -36,7 +36,7 @@ Start by adding this repo to your projects composer.json file:
 You can then simply require the package as with any other:
 
 ```
-$ composer require gatenbysanderson/laravel-pdf-generator "~5.5"
+$ composer require gatenbysanderson/laravel-pdf-generator "~5.5.0"
 ```
 
 The service provider and facade will automatically be loaded by Laravel 5.5.
