@@ -23,6 +23,11 @@ Start by adding this repo to your projects composer.json file:
         "type": "vcs",
         "url":  "git@github.com:gatenbysanderson/laravel-pdf-generator.git",
         "no-api": true
+    },
+    {
+        "type": "vcs",
+        "url":  "git@github.com:gatenbysanderson/pdf-generator-sdk.git",
+        "no-api": true
     }
   ]
 }
