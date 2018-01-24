@@ -27,6 +27,7 @@
         }
     ],
     "require": {
+        "php": ">=7.0",
         "gatenbysanderson/pdf-generator-sdk": "^1.1",
         "guzzlehttp/guzzle": "^6.3"
     },
@@ -35,5 +36,15 @@
     },
     "scripts": {
         "gscs": "phpcs --standard=vendor/gatenbysanderson/code-sniffer/src/phpcs.xml src"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GatenbySanderson\\LaravelPdfGenerator\\ServiceProvider"
+            ],
+            "aliases": {
+                "PDF": "GatenbySanderson\\LaravelPdfGenerator\\Facade"
+            }
+        }
     }
 }

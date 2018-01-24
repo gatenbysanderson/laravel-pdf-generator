@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* PHP >=5.6
+* PHP >=7.0
 
 As this is a private repo, when using composer to require this package - it is assumed your SSH key has already been added to GitHub to authenticate.
 
@@ -23,6 +23,11 @@ Start by adding this repo to your projects composer.json file:
         "type": "vcs",
         "url":  "git@github.com:gatenbysanderson/laravel-pdf-generator.git",
         "no-api": true
+    },
+    {
+        "type": "vcs",
+        "url":  "git@github.com:gatenbysanderson/pdf-generator-sdk.git",
+        "no-api": true
     }
   ]
 }
@@ -31,33 +36,15 @@ Start by adding this repo to your projects composer.json file:
 You can then simply require the package as with any other:
 
 ```
-$ composer require gatenbysanderson/laravel-pdf-generator "~5.1"
+$ composer require gatenbysanderson/laravel-pdf-generator "~5.5"
 ```
 
-You must then register the service provider and optionally the facade:
-
-```php
-// config/app.php
-
-return [
-
-    'providers' => [
-        // ...
-        GatenbySanderson\LaravelPdfGenerator\Providers\PdfGeneratorServiceProvider::class,
-    ],
-    
-    'aliases' => [
-        // ...
-        'PDF' => GatenbySanderson\LaravelPdfGenerator\Facades\Pdf::class,
-    ],
-    
-];
-```
+The service provider and facade will automatically be loaded by Laravel 5.5.
 
 The `pdf.php` config file must be published from the service provider:
 
 ```
-$ php artisan vendor:publish --provider="GatenbySanderson\LaravelPdfGenerator\Providers\PdfGeneratorServiceProvider" --tag="config"
+$ php artisan vendor:publish --provider="GatenbySanderson\LaravelPdfGenerator\ServiceProvider" --tag="config"
 ```
 
 Finally, the `PDF_URL` must be set in the `.env` file.
