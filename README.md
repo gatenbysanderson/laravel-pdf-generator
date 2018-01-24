@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* PHP >=5.6
+* PHP >=7.0
 
 As this is a private repo, when using composer to require this package - it is assumed your SSH key has already been added to GitHub to authenticate.
 

@@ -27,6 +27,7 @@
         }
     ],
     "require": {
+        "php": ">=7.0",
         "gatenbysanderson/pdf-generator-sdk": "^1.1",
         "guzzlehttp/guzzle": "^6.3"
     },
