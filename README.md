@@ -34,30 +34,12 @@ You can then simply require the package as with any other:
 $ composer require gatenbysanderson/laravel-pdf-generator "~5.1"
 ```
 
-You must then register the service provider and optionally the facade:
-
-```php
-// config/app.php
-
-return [
-
-    'providers' => [
-        // ...
-        GatenbySanderson\LaravelPdfGenerator\Providers\PdfGeneratorServiceProvider::class,
-    ],
-    
-    'aliases' => [
-        // ...
-        'PDF' => GatenbySanderson\LaravelPdfGenerator\Facades\Pdf::class,
-    ],
-    
-];
-```
+The service provider and facade will automatically be loaded by Laravel 5.5.
 
 The `pdf.php` config file must be published from the service provider:
 
 ```
-$ php artisan vendor:publish --provider="GatenbySanderson\LaravelPdfGenerator\Providers\PdfGeneratorServiceProvider" --tag="config"
+$ php artisan vendor:publish --provider="GatenbySanderson\LaravelPdfGenerator\ServiceProvider" --tag="config"
 ```
 
 Finally, the `PDF_URL` must be set in the `.env` file.
