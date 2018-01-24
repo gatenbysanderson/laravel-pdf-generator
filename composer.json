@@ -19,10 +19,21 @@
             "type": "vcs",
             "url":  "git@github.com:gatenbysanderson/pdf-generator-sdk.git",
             "no-api": true
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:gatenbysanderson/code-sniffer.git",
+            "no-api": true
         }
     ],
     "require": {
         "gatenbysanderson/pdf-generator-sdk": "^1.1",
         "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "gatenbysanderson/code-sniffer": "^1.1"
+    },
+    "scripts": {
+        "gscs": "phpcs --standard=vendor/gatenbysanderson/code-sniffer/src/phpcs.xml src"
     }
 }
