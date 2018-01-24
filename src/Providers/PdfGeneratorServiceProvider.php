@@ -18,7 +18,7 @@ class PdfGeneratorServiceProvider extends ServiceProvider
     {
         // Publish the config file.
         $this->publishes([
-            __DIR__ . '/../config/pdf.php' => config_path('pdf.php')
+            __DIR__ . '/../../config/pdf.php' => config_path('pdf.php')
         ], 'config');
     }
 
