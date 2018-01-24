@@ -136,7 +136,7 @@ The branch name represents the Laravel version it is designed for.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/gatenbysanderson/pdf-generator-sdk/tags). 
+We use a versioning scheme to match the Laravel version supported. For the versions available, see the [tags on this repository](https://github.com/gatenbysanderson/pdf-generator-sdk/tags). 
 
 ## License
 
