@@ -1,0 +1,28 @@
+{
+    "name": "gatenbysanderson/laravel-pdf-generator",
+    "description": "A Laravel package for generating PDF's by communicating with the PDF Generator API.",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mubeen Inamdar",
+            "email": "mubeen.inamdar@gatenbysanderson.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GatenbySanderson\\LaravelPdfGenerator\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:gatenbysanderson/pdf-generator-sdk.git",
+            "no-api": true
+        }
+    ],
+    "require": {
+        "gatenbysanderson/pdf-generator-sdk": "^1.1",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
