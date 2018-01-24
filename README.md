@@ -31,10 +31,10 @@ Start by adding this repo to your projects composer.json file:
 You can then simply require the package as with any other:
 
 ```
-$ composer require gatenbysanderson/laravel-pdf-generator
+$ composer require gatenbysanderson/laravel-pdf-generator "~5.1"
 ```
 
-You must then register the service provider and optionally rhe facade:
+You must then register the service provider and optionally the facade:
 
 ```php
 // config/app.php
@@ -57,7 +57,7 @@ return [
 The `pdf.php` config file must be published from the service provider:
 
 ```
-$ php artisan vendor:publish --provider="GatenbySanderson\LaravelPdfGenerator\Providers\PdfGeneratorServiceProvider" --tag="config
+$ php artisan vendor:publish --provider="GatenbySanderson\LaravelPdfGenerator\Providers\PdfGeneratorServiceProvider" --tag="config"
 ```
 
 Finally, the `PDF_URL` must be set in the `.env` file.
@@ -99,7 +99,6 @@ $response = PDF::generate([
     'html_file.html' => '<h1>Hello</h1>',
     'blade_template.blade.php' => view('home'), 
 ]);
-
 ```
 
 ### Further Information
