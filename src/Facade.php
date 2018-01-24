@@ -1,11 +1,10 @@
 <?php
 
-namespace GatenbySanderson\LaravelPdfGenerator\Facades;
+namespace GatenbySanderson\LaravelPdfGenerator;
 
-use GatenbySanderson\LaravelPdfGenerator\PdfGenerator;
-use Illuminate\Support\Facades\Facade;
+use Illuminate\Support\Facades\Facade as BaseFacade;
 
-class Pdf extends Facade
+class Facade extends BaseFacade
 {
     /**
      * Get the registered name of the component.

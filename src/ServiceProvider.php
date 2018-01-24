@@ -1,13 +1,12 @@
 <?php
 
-namespace GatenbySanderson\LaravelPdfGenerator\Providers;
+namespace GatenbySanderson\LaravelPdfGenerator;
 
-use GatenbySanderson\LaravelPdfGenerator\PdfGenerator;
 use GatenbySanderson\PdfGeneratorSdk\PdfGenerator as PdfGeneratorSdk;
 use GuzzleHttp\Client;
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class PdfGeneratorServiceProvider extends ServiceProvider
+class ServiceProvider extends BaseServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -18,7 +17,7 @@ class PdfGeneratorServiceProvider extends ServiceProvider
     {
         // Publish the config file.
         $this->publishes([
-            __DIR__ . '/../../config/pdf.php' => config_path('pdf.php')
+            __DIR__ . '/../config/pdf.php' => config_path('pdf.php')
         ], 'config');
     }
 

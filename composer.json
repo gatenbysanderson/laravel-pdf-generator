@@ -35,5 +35,15 @@
     },
     "scripts": {
         "gscs": "phpcs --standard=vendor/gatenbysanderson/code-sniffer/src/phpcs.xml src"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GatenbySanderson\\LaravelPdfGenerator\\ServiceProvider"
+            ],
+            "aliases": {
+                "PDF": "GatenbySanderson\\LaravelPdfGenerator\\Facade"
+            }
+        }
     }
 }
