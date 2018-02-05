@@ -2,6 +2,12 @@
 
 A Laravel package for generating PDF's by communicating with the PDF Generator API.
 
+## Licence
+
+Copyright &copy; 2018 GatenbySanderson Ltd.
+
+This project is open source software released under the terms of the MIT licence: see [LICENCE.md](LICENCE.md).
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
