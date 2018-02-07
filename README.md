@@ -94,8 +94,7 @@ $response = PDF::generate([
 
 ### Further Information
 
-This package is simply a wrapper for the PDF Generator SDK which allows blade files to be compiled down to HTML for convenience.
-For further information, please see [gatenbysanderson/pdf-generator-sdk](https://github.com/gatenbysanderson/pdf-generator-sdk).
+This package is simply a wrapper for the PDF Generator SDK which allows Blade files to be compiled down into HTML for convenience. For more information, please see [gatenbysanderson/pdf-generator-sdk](https://github.com/gatenbysanderson/pdf-generator-sdk).
 
 ## Running the Tests
 
