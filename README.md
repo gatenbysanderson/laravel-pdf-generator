@@ -145,7 +145,3 @@ The branch name represents the Laravel version it is designed for.
 ## Versioning
 
 We use a versioning scheme to match the Laravel version supported. For the versions available, see the [tags on this repository](https://github.com/gatenbysanderson/laravel-pdf-generator/tags). 
-
-## License
-
-This project is licensed under the proprietary License.
