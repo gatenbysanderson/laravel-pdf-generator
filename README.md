@@ -1,6 +1,6 @@
 # Laravel PDF Generator
 
-A Laravel package for generating PDF's by communicating with the PDF Generator API.
+A Laravel package for generating PDFs by communicating with the PDF Generator API.
 
 ## Licence
 
@@ -15,8 +15,6 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 * PHP >=7.0
-
-As this is a private repo, when using composer to require this package - it is assumed your SSH key has already been added to GitHub to authenticate.
 
 ### Installing
 
@@ -83,7 +81,7 @@ public function index(PdfGenerator $pdfGenerator)
 }
 ```
 
-Or you can optionally use the facade:
+Or you can optionally use the `PDF` facade:
 
 ```php
 <?php
@@ -99,7 +97,7 @@ $response = PDF::generate([
 This package is simply a wrapper for the PDF Generator SDK which allows blade files to be compiled down to HTML for convenience.
 For further information, please see [gatenbysanderson/pdf-generator-sdk](https://github.com/gatenbysanderson/pdf-generator-sdk).
 
-## Running the tests
+## Running the Tests
 
 The code sniffer can be ran as follows:
 
@@ -125,7 +123,6 @@ The branch name represents the Laravel version it is designed for.
 2. Push your commits to the feature branch
 3. Submit a pull request to merge the feature into `5.1/5.5`
 4. `5.1/5.5` should then be tagged with a new patch release (i.e. only the last number 5.1.x/5.5.x)
-
 
 ## Versioning
 
