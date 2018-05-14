@@ -1,6 +1,6 @@
 # Laravel PDF Generator
 
-A Laravel package for generating PDFs by communicating with the PDF Generator API.
+A Laravel package for generating PDFs by communicating with the PDF Generator API (see [gatenbysanderson/pdf-generator](https://github.com/gatenbysanderson/pdf-generator)).
 
 ## Licence
 
